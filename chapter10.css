@@ -1,0 +1,81 @@
+/*chapter9-2のファイルをALL COPYしてスタート*/
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+header {
+  width:100%;
+  height:50px;
+  background-color:#ff9a4b;
+}
+
+main {
+  width:100%;
+  /*解答より：main->contents としなくてもできる。
+  width:960px*/
+  display:flex;
+  justify-content:center;
+}
+
+.contents {
+  width:960px;
+  margin:50px auto; /*margin:50px auto; ->訂正済*/
+  display:flex;
+}
+
+.content-box {
+  width:300px;
+  margin-left:30px;
+  position:relative;
+}
+
+.content-box:nth-child(1) {
+  margin-left:0;
+}
+
+.tag {
+  /*display:inline-block; 解答より：不要->訂正済*/
+  background-color:#ff9a4b;
+  color:#fff;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.content-item {
+  padding:10px;
+  background-color:#eeeeee; /*解答より：一部省略可 #eee*/
+}
+
+.image {
+  width:280px;
+  height:150px;
+  background-size:cover;
+  background-position:bottom; /*background-position:bottom; ->訂正済*/
+}
+
+.image1 {
+  background-image:url(img/flow01.png);
+}
+
+.image2 {
+  background-image:url(img/flow02.png);
+}
+
+.image3 {
+  background-image:url(img/flow03.png);
+}
+
+.title {
+  /*padding-top:15px; ->解答より；margin:15px 0 5px; 上 左右 下 ->訂正済*/
+  margin:15px 0 5px;
+  padding-bottom:5px;
+}
+
+footer {
+  width:100%;
+  height:50px;
+  background-color:#aaaaaa; /*解答より：一部省略可 #aaa*/
+}
